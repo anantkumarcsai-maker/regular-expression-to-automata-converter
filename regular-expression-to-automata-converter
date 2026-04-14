@@ -1,3 +1,0 @@
-git add automata.html
-git commit -m "regular-expression-to-automata-converter"
-git push origin main
