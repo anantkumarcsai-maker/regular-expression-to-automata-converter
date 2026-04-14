@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Regular Expression to Automata Converter</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            color: #333;
+            margin: 0;
+            padding: 20px;
+        }
+        h1 {
+            text-align: center;
+        }
+        #converter {
+            background: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+        textarea {
+            width: 100%;
+            height: 100px;
+            margin-bottom: 10px;
+        }
+        button {
+            background: #5cb85c;
+            color: white;
+            border: none;
+            padding: 10px 15px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <h1>Regular Expression to Automata Converter</h1>
+    <div id="converter">
+        <textarea id="regexInput" placeholder="Enter regular expression..."></textarea>
+        <button id="convertButton">Convert</button>
+        <div id="output"></div>
+    </div>
+    <script>
+        function regexToNFA(regex) {
+            // Implement the regex to NFA conversion logic
+            // Placeholder function
+            return regex; // Return the regex as is for now
+        }
+
+        function convert() {
+            const regex = document.getElementById('regexInput').value;
+            const nfa = regexToNFA(regex);
+            document.getElementById('output').innerText = `NFA: ${nfa}`;
+        }
+
+        document.getElementById('convertButton').addEventListener('click', convert);
+    </script>
+</body>
+</html>
